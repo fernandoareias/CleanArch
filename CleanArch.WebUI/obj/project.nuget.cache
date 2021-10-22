@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7M6NhqTcOkqSzbSESwXCoNraJqQRBe3VaIy91P2U2tflWM6Ujfj42ZojxzM9lv0M4DuhvBsEjpQDwmJyXjOyjw==",
+  "success": true,
+  "projectFilePath": "/home/fernando/dev/CleanArch/CleanArch.WebUI/CleanArch.WebUI.csproj",
+  "expectedPackageFiles": [
+    "/home/fernando/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

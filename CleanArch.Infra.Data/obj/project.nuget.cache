@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vuu0ns1M8KYCeFcPJL8YXdvRWEhYspnSxjk3apqmnWiZuia5WH7sX5hwxearGGjo2oBjhRYHC0QJrPRpSQDs5g==",
+  "success": true,
+  "projectFilePath": "/home/fernando/dev/CleanArch/CleanArch.Infra.Data/CleanArch.Infra.Data.csproj",
+  "expectedPackageFiles": [
+    "/home/fernando/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
