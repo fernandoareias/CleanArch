@@ -17,9 +17,10 @@ CleanArch.Domain.Tests/obj/*
 CleanArch.Infra.Data/bin/*
 CleanArch.Infra.Data/obj/*
 
-CleanArch.WebUI/bin/*
-CleanArch.WebUI/obj/* 
+CleanArch.API/bin/*
+CleanArch.API/appsettings.*
+CleanArch.API/obj/* 
 
 
-CleanArch.WebUI/appsettings.*
+
 .vscode

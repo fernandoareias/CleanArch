@@ -11,45 +11,45 @@ using Microsoft.EntityFrameworkCore;
 namespace CleanArch.Infra.Repositories {
     public class ProductRepository : IProductRepository {
 
-        private readonly ApplicationDbContext _context;
+        private ApplicationDbContext _contextProduct;
         public ProductRepository(ApplicationDbContext context)
         {
-            _context = context;
+            _contextProduct = context;
         }
 
         public async Task<Product> CreateAsync(Product product)
         {
-            _context.Add(product);
-            await _context.SaveChangesAsync();
+            _contextProduct.Add(product);
+            await _contextProduct.SaveChangesAsync();
             return product;
         }
 
         public async Task<Product> GetByIdAsync(int? id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _contextProduct.Products.FindAsync(id);
         }
 
         public async Task<IEnumerable<Product>> GetCategoriesAsync()
         {
-            return await _context.Products.ToListAsync();
+            return await _contextProduct.Products.ToListAsync();
         }
 
         public async Task<Product> GetProductCategoryAsync(int? id)
         {
-            return await _context.Products.Include(c => c.Category).FirstOrDefaultAsync(p => p.Id.Equals(id));
+            return await _contextProduct.Products.Include(c => c.Category).FirstOrDefaultAsync(p => p.Id.Equals(id));
         }
 
         public async Task<Product> RemoveAsync(Product product)
         {
-            _context.Remove(product);
-            await _context.SaveChangesAsync();
+            _contextProduct.Remove(product);
+            await _contextProduct.SaveChangesAsync();
             return product;
         }
 
         public async Task<Product> UpdateAsync(Product product)
         {
-            _context.Update(product);
-            await _context.SaveChangesAsync();
+            _contextProduct.Update(product);
+            await _contextProduct.SaveChangesAsync();
             return product;
         }
     }

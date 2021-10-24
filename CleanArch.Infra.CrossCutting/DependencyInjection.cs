@@ -17,7 +17,7 @@ namespace CleanArch.Infra.CrossCutting
                     b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)
                 )
             );
-
+            //services.AddScoped<DbContext, ApplicationDbContext>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
 
