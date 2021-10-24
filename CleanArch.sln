@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.CrossCuttin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.WebUI", "CleanArch.WebUI\CleanArch.WebUI.csproj", "{56B8EAAC-0285-4E86-B60F-DD0F1EAD00FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain.Tests", "CleanArch.Domain.Tests\CleanArch.Domain.Tests.csproj", "{91909282-B9F2-47BD-9CBE-4D8D73844A52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +88,17 @@ Global
 		{56B8EAAC-0285-4E86-B60F-DD0F1EAD00FD}.Release|x64.Build.0 = Release|Any CPU
 		{56B8EAAC-0285-4E86-B60F-DD0F1EAD00FD}.Release|x86.ActiveCfg = Release|Any CPU
 		{56B8EAAC-0285-4E86-B60F-DD0F1EAD00FD}.Release|x86.Build.0 = Release|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Debug|x64.Build.0 = Debug|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Debug|x86.Build.0 = Debug|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Release|x64.ActiveCfg = Release|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Release|x64.Build.0 = Release|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Release|x86.ActiveCfg = Release|Any CPU
+		{91909282-B9F2-47BD-9CBE-4D8D73844A52}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
