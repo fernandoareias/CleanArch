@@ -20,3 +20,4 @@ CleanArch.Infra.Data/obj/*
 CleanArch.WebUI/bin/*
 CleanArch.WebUI/obj/*
 
+.vscode
