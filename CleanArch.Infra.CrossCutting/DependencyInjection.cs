@@ -5,6 +5,9 @@ using CleanArch.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using CleanArch.Application.Interfaces;
+using CleanArch.Application.Services;
+using CleanArch.Application.Mappings;
 
 namespace CleanArch.Infra.CrossCutting
 {
@@ -21,6 +24,11 @@ namespace CleanArch.Infra.CrossCutting
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
 
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+            services.AddAutoMapper(typeof(DomainProfile));
+            
             return services;
         }
     }
