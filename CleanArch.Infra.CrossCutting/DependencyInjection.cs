@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using CleanArch.Application.Interfaces;
 using CleanArch.Application.Services;
 using CleanArch.Application.Mappings;
+using MediatR;
 
 namespace CleanArch.Infra.CrossCutting
 {
@@ -29,6 +30,10 @@ namespace CleanArch.Infra.CrossCutting
 
             services.AddAutoMapper(typeof(DomainProfile));
             
+            
+            var myHandlers = AppDomain.CurrentDomain.Load("CleanArch.Application");
+            services.AddMediatR(myHandlers);
+
             return services;
         }
     }

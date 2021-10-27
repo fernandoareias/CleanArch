@@ -38,13 +38,13 @@ namespace CleanArch.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet]
+       /* [HttpGet]
         [Route("{idProduct}/categories")]
         public async Task<IActionResult> GetByIdWithCategory(int idProduct){
             var result = await  _productService.GetProductCategory(idProduct);
             if(result == null) return NotFound();
             return Ok(result);
-        }
+        }*/
 
 
         [HttpPost]
